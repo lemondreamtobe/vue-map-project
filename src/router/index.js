@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Index from '@/page/index'
+import Map from '@/page/map'
+import Search from '@/page/search'
 
 Vue.use(Router)
 
@@ -8,8 +10,16 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+      component: Index,
+      children: [{
+          path: '',
+          component: Search,
+        },
+        {
+          path: '/map',
+          component: Map,
+        }
+      ]
+    },
   ]
 })

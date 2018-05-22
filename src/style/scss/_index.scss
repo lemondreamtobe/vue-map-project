@@ -1,0 +1,46 @@
+.child-view{
+    left: 0px;
+    right: 0px;
+}
+.logo-img {
+    display: inline-block;
+    /* width: 1.2em; */
+    // font-size: 128px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 1;
+}
+[title=回到首页]{
+    cursor: pointer;
+}
+.logo-img img {
+    vertical-align: middle;
+    padding: 2px; // border: 1px solid #beceeb;
+    width: 100px;
+    margin-left: 13px;
+}
+.logo-title {
+    vertical-align: -2px;
+    line-height: 66px;
+    font-size: 24px;
+    color: #409EFF;
+    /* margin-left: 13px; */
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    left: 106px;
+    top: 24px;
+}
+#app{
+    height: 100%;
+    min-width: 500px;
+    min-height: 400px;
+    background: url('../static/img/bg.jpg');
+    // overflow: hidden;
+    background-size: 100% 100%;
+}
+#fm{
+    width: 100px;
+    height: 100px;
+}

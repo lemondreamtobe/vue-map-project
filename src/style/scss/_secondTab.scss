@@ -1,0 +1,13 @@
+#secondTab{
+    #tagGroup{
+        margin-top: 15px;
+        span{
+            cursor: pointer;
+        };
+        span:hover{
+            background-color: rgba(103,194,58,.1);
+            border-color: rgba(103,194,58,.2);
+            color: #67c23a;     
+        }
+    }
+}

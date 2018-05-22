@@ -1,0 +1,36 @@
+#search{
+    // margin: 0 auto;
+    // width: 25%;
+    text-align: center;
+    // padding-top: 10%;
+    top: 0px;
+    bottom: 0px;
+    // background: url('../static/img/bg.jpg');
+    // // overflow: hidden;
+    // background-size: 100% 100%;
+    .el-form-item{
+        margin-bottom: 40px;
+    }
+    .el-form-item:first-child{
+        margin-top: 20px;
+    }
+    .el-tabs__item.is-top{
+        color: white;
+    }
+    .el-tabs__item.is-active{
+        color: #409EFF;
+    }
+    #searchTab{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // padding-top: 15%;
+        height: 100%;
+    }
+    .el-tabs{
+        width: 20%;
+        min-width: 310px;
+    }
+}
+
+
