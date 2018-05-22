@@ -1,10 +1,19 @@
-# small-bee
+# 小蜜蜂个人自助地图
 
-> A Vue.js project
+> A SPA of Vue.js project
 
-## Build Setup
+## 技术栈
+> vue.js + vue-router + webpack + vue-element + BMAP
+
+## 项目预览地址
+> [click here to view!](http://www.small-bee.com)
+
+## 项目运行方式
 
 ``` bash
+# firstly, you should fork this repository
+click the button of 'fork' or 'Clone or download'
+
 # install dependencies
 npm install
 
