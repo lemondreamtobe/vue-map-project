@@ -4,7 +4,15 @@
     top: 109px;
     bottom: 40px;
     #BDMap{
-        width: 100%;
+    //    left: 308px;
+       right: 0px;
+       height: 100%;
+       margin-left: 310px;
+    }
+    #r-result{
+        width:300px;
         height: 100%;
+        float: left;
+        overflow: auto;
     }
 }

@@ -27,7 +27,7 @@
         geolocation.getCurrentPosition(function(r){
             if(this.getStatus() == BMAP_STATUS_SUCCESS){
                 _this.$store.commit('setPoint', {
-                    aim: 'by',
+                    aim: 'begin',
                     point: r.point,
                 });
             }
@@ -46,6 +46,7 @@
            this.$message.error('请输入合法的字符');
         } else {
           this.$store.commit('setAim', this.by);
+          this.$store.commit('changeState', 'nearby');
           this.$router.push({
             path: "map"
           });
