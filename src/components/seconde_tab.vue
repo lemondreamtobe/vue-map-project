@@ -30,6 +30,7 @@
                     aim: 'begin',
                     point: r.point,
                 });
+                console.log('获取附近的初始化位置成功');
             }
             else {
                 alert('failed'+this.getStatus());

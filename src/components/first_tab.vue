@@ -75,6 +75,7 @@ import BMap from 'BMap';
                     aim: 'begin',
                     point: r.point,
                 });
+                console.log('获取初始化位置成功');
             }
             else {
                 alert('failed'+this.getStatus());
@@ -90,6 +91,7 @@ import BMap from 'BMap';
             return new Promise(function(resolve, reject) {
                 myGeo.getPoint(_this.ruleForm.origin, function(point){
                     if (point) {
+                        console.log('获取出发点位置成功');
                         _this.$store.commit('setPoint', {
                             aim: 'begin',
                             point: point
@@ -100,6 +102,7 @@ import BMap from 'BMap';
             }).then(function(resolve, reject) {
                 myGeo.getPoint(_this.ruleForm.purpose, function(point){
                     if (point) {
+                        console.log('获取目的地位置成功');
                         _this.$store.commit('setPoint', {
                                 aim: 'end',
                                 point: point
