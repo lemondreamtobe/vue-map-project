@@ -11,11 +11,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api/**': {
-        target: 'www.small-bee.com', // 你接口的域名
-        secure: false,
-        changeOrigin: false,
-      }
+      
     },
 
     // Various Dev Server settings
