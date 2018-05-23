@@ -29,7 +29,7 @@
     ),
     created() {
 
-        if (!aim) {
+        if (!this.aim) {
              this.$router.push({
                 path: "/"
             });
