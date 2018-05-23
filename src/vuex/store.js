@@ -9,6 +9,10 @@ const store = new Vuex.Store({
 	// 定义状态
 	state: {
 			func: 'route',
+			pointWord: {
+				b:'起点',
+				e: '终点'
+			},
 			pointbegin: {
 				lng: 0,
 				lat: 0
@@ -22,8 +26,16 @@ const store = new Vuex.Store({
 				lat: 0
 			},
 			aim: '',
+			route_type: 'traffic',
 	},
 	mutations: {
+			setPointWord(state, obj) {
+				state.pointWord.b = obj.b;
+				state.pointWord.e = obj.e;
+			},
+			changeRoute(state, type) {
+				state.route_type = type;
+			},
 			changeState(state, status) {
 				state.func = status;
 			},
@@ -35,7 +47,7 @@ const store = new Vuex.Store({
 			},
 			setAim(state, w) {
 					state.aim = w;
-			}
+			},
 	},
 	getters: {
 		

@@ -23,10 +23,17 @@
         pointbegin: 'pointbegin',
         pointend: 'pointend',
         aim: 'aim',
+        pointWord: 'pointWord',
+        route_type: 'route_type'
       })
     ),
     created() {
 
+        if (!aim) {
+             this.$router.push({
+                path: "/"
+            });
+        }
     },
     mounted() {
       this.ready();

@@ -7,6 +7,13 @@
       <el-form-item label="目的地:" prop="purpose">
         <el-input @keyup.enter.native="submitForm('ruleForm')" v-model="ruleForm.purpose"></el-input>
       </el-form-item>
+      <el-form-item label="路线类型" prop="route_type">
+					<el-radio-group v-model="ruleForm.route_type">
+						<el-radio label="traffic">交通</el-radio>
+						<el-radio label="walk">步行</el-radio>
+						<el-radio label="car">自驾</el-radio>
+					</el-radio-group>
+			</el-form-item>
       <!-- <el-form-item> -->
       <el-button class="login-btn" type="primary" @click="submitForm('ruleForm')">搜索</el-button>
       <!-- </el-form-item> -->
@@ -29,7 +36,8 @@ import BMap from 'BMap';
       return {
         ruleForm: {
           origin: '',
-          purpose: '',
+          purpose: '广东省广州市黄陂地铁站',
+          route_type: 'traffic'
         },
         rules: {
           origin: [{
@@ -108,8 +116,13 @@ import BMap from 'BMap';
                                 point: point
                         });
                         _this.$store.commit('changeState', 'route');
+                        _this.$store.commit('setPointWord', {
+                          b: _this.ruleForm.origin,
+                          e: _this.ruleForm.purpose
+                        });
+                        _this.$store.commit('changeRoute', _this.ruleForm.route_type);
                         _this.$router.push({
-                          path: "map"
+                          path: "route"
                         });
                     }
 		        });
