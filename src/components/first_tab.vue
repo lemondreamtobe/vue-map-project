@@ -93,6 +93,7 @@ import BMap from 'BMap';
                 console.log('获取初始化位置成功');
             }
             else {
+                loading.close();
                 alert('failed'+this.getStatus());
             }        
         });

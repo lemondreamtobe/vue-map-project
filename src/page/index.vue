@@ -3,7 +3,7 @@
     <a class="logo-img">
       <img src="../../static/img/bee.png">
     </a>
-    <router-link class="logo-title" to="/" title="回到首页">vue中的百度地图demo</router-link>
+    <router-link class="logo-title" to="/" title="回到首页">小蜜蜂个人自助地图</router-link>
     <transition :name="transitionName">
       <router-view class="child-view"></router-view>
     </transition>
