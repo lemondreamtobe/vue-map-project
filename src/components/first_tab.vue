@@ -85,6 +85,7 @@ import BMap from 'BMap';
                     street: posArr[2],
                 } = r.address);
                 _this.ruleForm.origin = posArr.join('');
+                 _this.ruleForm.origin = '广东省广州市高新兴科技集团';
                 _this.$store.commit('setPoint', {
                     aim: 'begin',
                     point: r.point,
