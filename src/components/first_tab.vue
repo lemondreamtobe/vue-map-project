@@ -69,6 +69,12 @@ import BMap from 'BMap';
     },
     mounted(){
         let _this = this;
+         const loading = this.$loading({
+          lock: true,
+          text: '正在拼命获取当前位置中',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        });
         let geolocation = new BMap.Geolocation();
         geolocation.getCurrentPosition(function(r){
             if(this.getStatus() == BMAP_STATUS_SUCCESS){
@@ -83,6 +89,7 @@ import BMap from 'BMap';
                     aim: 'begin',
                     point: r.point,
                 });
+                loading.close();
                 console.log('获取初始化位置成功');
             }
             else {
