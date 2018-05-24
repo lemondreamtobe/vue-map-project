@@ -10,6 +10,8 @@
         <el-tag type="info">银行</el-tag>
         <el-tag type="info">医院</el-tag>
         <el-tag type="info">电影院</el-tag>
+        <el-tag type="info">星巴克</el-tag>  
+        <el-tag type="info">公交站</el-tag>      
     </div>
   </div>
 </template>
