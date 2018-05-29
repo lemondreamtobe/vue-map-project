@@ -3,7 +3,7 @@
 > A SPA of Vue.js project
 
 ## 技术栈
-> vue.js + vue-router + webpack + vue-element + vuex + BMAP 
+> vue.js + vue-router + vue-element + vuex + BMAP 
 
 ## 项目预览地址
 > [click here to view!](http://www.small-bee.com)
